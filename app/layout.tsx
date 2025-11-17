@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className="min-h-screen flex flex-col">
+    <html lang="en" suppressHydrationWarning>
+      <body className="min-h-screen flex flex-col" suppressHydrationWarning>
         <AuthProvider>
           <ProtectedRoute>
             <Header />
@@ -36,4 +36,3 @@ export default function RootLayout({
     </html>
   )
 }
-
