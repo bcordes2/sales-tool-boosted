@@ -112,12 +112,8 @@ export default function Results({ results, isLoading }: ResultsProps) {
                 )}
 
                 {/* Lead Time */}
-                {result.c_leadTime && (
-                  <>
-                    <div className="font-semibold">Lead Time:</div>
-                    <div>{result.c_leadTime}</div>
-                  </>
-                )}
+                <div className="font-semibold">Lead Time:</div>
+                <div>{result.c_leadtime || 'n/a'}</div>
 
                 {/* Price */}
                 {result.pt_product && result.pt_price && (

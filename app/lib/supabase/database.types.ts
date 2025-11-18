@@ -109,7 +109,7 @@ export type Database = {
           p_primaryrto: string
           p_primaryrtolink: string
           p_phonenumber: string
-          c_leadTime: string
+          c_leadtime: string
           c_zipcode: number
           p_coverage: string
           c_city: string
