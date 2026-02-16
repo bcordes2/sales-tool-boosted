@@ -199,7 +199,7 @@ export default function Form({ onResults, onLoading }: FormProps) {
         <div className="mt-4 space-y-2 text-center">
           <div>
             <a
-              href="https://www.taxjar.com/sales-tax-calculator"
+              href="https://metalbuildingsnorthamerica.com/sales-tax-calculator/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#ff2400] hover:text-[#cc1d00] font-semibold"
