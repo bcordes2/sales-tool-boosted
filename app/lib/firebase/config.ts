@@ -17,8 +17,8 @@ const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0
 // Initialize Firebase Authentication and get a reference to the service
 export const auth = getAuth(app)
 
-// Domain validation constant
-export const ALLOWED_DOMAIN = 'metal-america.com'
+// Allowed email domains
+const ALLOWED_DOMAINS = ['@metalbuildingsnorthamerica.com', '@metal-america.com']
 
 // Configure Google Auth Provider
 export const googleProvider = new GoogleAuthProvider()
@@ -26,14 +26,14 @@ export const googleProvider = new GoogleAuthProvider()
 // Configure Google provider settings
 googleProvider.setCustomParameters({
   prompt: 'select_account', // Always show account selection
-  hd: ALLOWED_DOMAIN, // Restrict to specific domain
+  hd: 'metal-america.com', // Suggest company domain
 })
 
 // Helper function to validate user email domain
 export function isValidDomain(email: string): boolean {
   if (!email) return false
-  const domain = email.split('@')[1]
-  return domain === ALLOWED_DOMAIN
+  const lowerEmail = email.toLowerCase()
+  return ALLOWED_DOMAINS.some(domain => lowerEmail.endsWith(domain))
 }
 
 // Helper function to parse display name into first and last name
