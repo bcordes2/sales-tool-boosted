@@ -102,7 +102,7 @@ export default function Footer() {
         {/* Right: Contact Information */}
         <div className="flex flex-col items-center justify-center gap-1 w-full md:w-1/3 order-2 md:order-none md:items-end md:text-right">
           <span className="text-lg font-semibold text-white mb-1">Metal America</span>
-          <span className="text-gray-300">sales@metalbuildingsnorthamerica.com</span>
+          <span className="text-gray-300">sales@metal-america.com</span>
           <span className="text-gray-300">5555 N Lamar Blvd Suite K103, Austin, TX 78751</span>
         </div>
       </div>

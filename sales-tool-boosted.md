@@ -150,7 +150,7 @@ public/                             # Static assets (logos, icons)
 1. User visits application → Redirected to `/login` (if not authenticated)
 2. User clicks "Sign in with Google" → Google OAuth popup appears
 3. User selects Google account → Firebase authenticates
-4. Email domain validated (must be @metalbuildingsnorthamerica.com)
+4. Email domain validated (must be @metal-america.com)
 5. Email must be verified
 6. On success → Redirected to home page
 7. User info displayed in header with logout button
