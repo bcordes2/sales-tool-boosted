@@ -18,7 +18,7 @@ const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0
 export const auth = getAuth(app)
 
 // Domain validation constant
-export const ALLOWED_DOMAIN = process.env.NEXT_PUBLIC_ALLOWED_DOMAIN || 'metal-america.com'
+export const ALLOWED_DOMAIN = 'metal-america.com'
 
 // Configure Google Auth Provider
 export const googleProvider = new GoogleAuthProvider()
